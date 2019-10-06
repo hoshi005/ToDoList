@@ -14,7 +14,7 @@ struct TaskListView: View {
     
     init() {
         // ダミーデータの作成.
-        viewModel.createDummyData(count: 3)
+        viewModel.createDummyData(count: 5)
     }
     
     var body: some View {
@@ -26,15 +26,15 @@ struct TaskListView: View {
                 
                 // フィルタリング用.
                 Toggle(isOn: $viewModel.showAllTasks) {
-                    Text("全てのタスクを表示する")
+                    Text("完了済みのタスクも表示する")
                 }
                 .padding(.horizontal, 16)
                 
                 // タスク一覧.
                 List {
-                    ForEach(viewModel.taskList) { viewModel in
-                        if self.viewModel.showAllTasks || !viewModel.isDone {
-                            TaskListRowView(viewModel: viewModel)
+                    ForEach(viewModel.taskList) { task in
+                        if self.viewModel.showAllTasks || !task.done {
+                            TaskListRowView(viewModel: self.viewModel, task: task)
                         }
                     }
                 }
@@ -42,7 +42,7 @@ struct TaskListView: View {
             .navigationBarTitle(.init("タスク一覧"))
         }
     }
-
+    
 }
 
 struct TaskListView_Previews: PreviewProvider {

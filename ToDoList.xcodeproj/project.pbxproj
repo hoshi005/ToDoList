@@ -20,7 +20,6 @@
 		EF41AB0D23498EC500771A01 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0523498EC500771A01 /* TaskListRowView.swift */; };
 		EF41AB0E23498EC500771A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0623498EC500771A01 /* AppDelegate.swift */; };
 		EF41AB0F23498EC500771A01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0723498EC500771A01 /* SceneDelegate.swift */; };
-		EF41AB112349A35900771A01 /* TaskListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB102349A35900771A01 /* TaskListRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		EF41AB0523498EC500771A01 /* TaskListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListRowView.swift; sourceTree = "<group>"; };
 		EF41AB0623498EC500771A01 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF41AB0723498EC500771A01 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF41AB102349A35900771A01 /* TaskListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				EF41AAFE23498EC500771A01 /* TaskListViewModel.swift */,
-				EF41AB102349A35900771A01 /* TaskListRowViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -319,7 +316,6 @@
 			files = (
 				EF41AB0823498EC500771A01 /* TaskListViewModel.swift in Sources */,
 				EF41AB0C23498EC500771A01 /* CreateTaskView.swift in Sources */,
-				EF41AB112349A35900771A01 /* TaskListRowViewModel.swift in Sources */,
 				EF41AB0D23498EC500771A01 /* TaskListRowView.swift in Sources */,
 				EF41AB0A23498EC500771A01 /* Task.swift in Sources */,
 				EF41AB0E23498EC500771A01 /* AppDelegate.swift in Sources */,

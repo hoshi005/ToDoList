@@ -8,14 +8,28 @@
 
 import Foundation
 
-struct Task: Identifiable {
+struct Task: Hashable, Identifiable {
     
     var id = UUID().uuidString
     var name: String
     var tag: TaskTag
     var done: Bool = false
+}
+
+
+extension Task {
+    
+    static var dummyTask = [
+        "ゴミ捨て",
+        "洗濯する",
+        "会社に電話する",
+        "福岡に出張",
+        "プレゼン資料を作成する",
+        "洗剤を買って帰る",
+        "プリンターを修理する"
+    ]
     
     static func dummyData() -> Task {
-        .init(name: "AAA", tag: .random)
+        .init(name: dummyTask.randomElement()!, tag: .random)
     }
 }

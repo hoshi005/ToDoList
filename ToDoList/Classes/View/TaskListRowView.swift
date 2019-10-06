@@ -10,24 +10,24 @@ import SwiftUI
 
 struct TaskListRowView: View {
     
-    @ObservedObject var viewModel: TaskListRowViewModel
+    @ObservedObject var viewModel: TaskListViewModel
+    var task: Task
     
     var body: some View {
         HStack {
-            Image(systemName: viewModel.task.tag.imageName)
+            Image(systemName: task.tag.imageName)
                 .imageScale(.large)
-            Text(viewModel.task.name)
+            Text(task.name)
             Spacer()
-            Image(systemName: viewModel.task.done ? "checkmark.square" : "square")
-            .onTapGesture {
-                self.viewModel.done()
-            }
+            Image(systemName: task.done ? "checkmark.square" : "square")
+                .imageScale(.large)
+                .onTapGesture { self.viewModel.done(self.task) }
         }
     }
 }
 
 struct TaskListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskListRowView(viewModel: TaskListRowViewModel.createDummyData())
+        TaskListRowView(viewModel: TaskListViewModel(), task: Task.dummyData())
     }
 }
