@@ -6,6 +6,7 @@
 //  Copyright © 2019 SH Lab, Inc. All rights reserved.
 //
 
+import Foundation
 import Combine
 
 final class TaskListViewModel: ObservableObject {
@@ -33,6 +34,19 @@ final class TaskListViewModel: ObservableObject {
     /// - Parameter task: 対象のタスク.
     func done(_ task: Task) {
         taskList[index(of: task)].done.toggle()
+    }
+    
+    /// タスクの削除.
+    /// - Parameter offsets: 削除したいタスクのindexSet.
+    func delete(at offsets: IndexSet) {
+        taskList.remove(atOffsets: offsets)
+    }
+    
+    /// タスクの並び替え.
+    /// - Parameter source: 移動したいタスクのindexSet.
+    /// - Parameter destination: 移動先.
+    func move(from source: IndexSet, to destination: Int) {
+        taskList.move(fromOffsets: source, toOffset: destination)
     }
     
     /// 指定されたタスクのインデックスを返す.

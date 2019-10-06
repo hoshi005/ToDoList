@@ -9,10 +9,12 @@
     * Combineのデータバインディング周りのまとめ
 * [Appleのフォーラム](https://forums.developer.apple.com/thread/121162)
     * TextFieldのクリアボタンについて
+* [一覧の移動](https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-move-rows-in-a-list)
+* [一覧の削除](https://www.hackingwithswift.com/quick-start/swiftui/how-to-enable-editing-on-a-list-using-editbutton)
 
 ## issue
 
 * 全角文字で入力するとTextFieldがぶっ壊れる？？
-* チェックのON/OFFが、親のViewModelに通知されないので、リストが再描画されない
-* 削除機能とかが未実装
+* <del>チェックのON/OFFが、親のViewModelに通知されないので、リストが再描画されない</del>
+* <del>削除機能とかが未実装</del>
 

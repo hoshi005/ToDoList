@@ -12,6 +12,7 @@
 		EF0C4B1F234630A00045B5A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0C4B1D234630A00045B5A7 /* LaunchScreen.storyboard */; };
 		EF0C4B2A234630A00045B5A7 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C4B29234630A00045B5A7 /* ToDoListTests.swift */; };
 		EF0C4B35234630A00045B5A7 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C4B34234630A00045B5A7 /* ToDoListUITests.swift */; };
+		EF40E7EC234A096B00961623 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EF40E7EB234A096B00961623 /* README.md */; };
 		EF41AB0823498EC500771A01 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AAFE23498EC500771A01 /* TaskListViewModel.swift */; };
 		EF41AB0923498EC500771A01 /* TaskTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0023498EC500771A01 /* TaskTag.swift */; };
 		EF41AB0A23498EC500771A01 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0123498EC500771A01 /* Task.swift */; };
@@ -51,6 +52,7 @@
 		EF0C4B30234630A00045B5A7 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0C4B34234630A00045B5A7 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		EF0C4B36234630A00045B5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF40E7EB234A096B00961623 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EF41AAFE23498EC500771A01 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		EF41AB0023498EC500771A01 /* TaskTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTag.swift; sourceTree = "<group>"; };
 		EF41AB0123498EC500771A01 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		EF0C4B062346309F0045B5A7 = {
 			isa = PBXGroup;
 			children = (
+				EF40E7EB234A096B00961623 /* README.md */,
 				EF0C4B112346309F0045B5A7 /* ToDoList */,
 				EF0C4B28234630A00045B5A7 /* ToDoListTests */,
 				EF0C4B33234630A00045B5A7 /* ToDoListUITests */,
@@ -289,6 +292,7 @@
 			files = (
 				EF0C4B1F234630A00045B5A7 /* LaunchScreen.storyboard in Resources */,
 				EF0C4B1C234630A00045B5A7 /* Preview Assets.xcassets in Resources */,
+				EF40E7EC234A096B00961623 /* README.md in Resources */,
 				EF0C4B19234630A00045B5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

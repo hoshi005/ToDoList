@@ -33,16 +33,19 @@ struct TaskListView: View {
                 // タスク一覧.
                 List {
                     ForEach(viewModel.taskList) { task in
+                        // 全タスク表示 or 未完了タスク表示.
                         if self.viewModel.showAllTasks || !task.done {
                             TaskListRowView(viewModel: self.viewModel, task: task)
                         }
                     }
+                    .onDelete(perform: viewModel.delete(at:)) // 削除.
+                    .onMove(perform: viewModel.move(from:to:)) // 並び替え.
                 }
             }
             .navigationBarTitle(.init("タスク一覧"))
+            .navigationBarItems(trailing: EditButton()) // 編集ボタン.
         }
     }
-    
 }
 
 struct TaskListView_Previews: PreviewProvider {
