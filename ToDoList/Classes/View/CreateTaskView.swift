@@ -11,19 +11,22 @@ import SwiftUI
 struct CreateTaskView: View {
     
     @ObservedObject var viewModel: TaskListViewModel
+    @State private var taskName : String = ""
     
     var body: some View {
         VStack {
             HStack {
                 // タスク名入力欄.
-                TextField("新しいタスクを入力してね", text: $viewModel.taskName) {
-                    if !self.viewModel.taskName.isEmpty {
+                TextField("新しいタスクを入力してね", text: $taskName) {
+                    if !self.taskName.isEmpty {
+                        self.viewModel.taskName = self.taskName
                         self.viewModel.createNewTask()
+                        self.taskName = ""
                     }
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .border(Color.gray, width: 2)
-                .modifier(ClearButton(taskName: $viewModel.taskName))
+                .modifier(ClearButton(taskName: $taskName))
                 
 //                // ADDボタン.
 //                Button(action: {
