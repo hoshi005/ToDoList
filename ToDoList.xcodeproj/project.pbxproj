@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,10 @@
 		EF41AB0D23498EC500771A01 /* TaskListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0523498EC500771A01 /* TaskListRowView.swift */; };
 		EF41AB0E23498EC500771A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0623498EC500771A01 /* AppDelegate.swift */; };
 		EF41AB0F23498EC500771A01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0723498EC500771A01 /* SceneDelegate.swift */; };
+		EF6D028B234DB6CD00632BA2 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028A234DB6CD00632BA2 /* APIKit */; };
+		EF6D028E234DB77100632BA2 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028D234DB77100632BA2 /* RxTest */; };
+		EF6D0290234DB77100632BA2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028F234DB77100632BA2 /* RxSwift */; };
+		EF6D0292234DB77100632BA2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D0291234DB77100632BA2 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6D0290234DB77100632BA2 /* RxSwift in Frameworks */,
+				EF6D028E234DB77100632BA2 /* RxTest in Frameworks */,
+				EF6D0292234DB77100632BA2 /* RxRelay in Frameworks */,
+				EF6D028B234DB6CD00632BA2 /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +210,12 @@
 			dependencies = (
 			);
 			name = ToDoList;
+			packageProductDependencies = (
+				EF6D028A234DB6CD00632BA2 /* APIKit */,
+				EF6D028D234DB77100632BA2 /* RxTest */,
+				EF6D028F234DB77100632BA2 /* RxSwift */,
+				EF6D0291234DB77100632BA2 /* RxRelay */,
+			);
 			productName = ToDoList;
 			productReference = EF0C4B0F2346309F0045B5A7 /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +288,10 @@
 				Base,
 			);
 			mainGroup = EF0C4B062346309F0045B5A7;
+			packageReferences = (
+				EF6D0289234DB6CD00632BA2 /* XCRemoteSwiftPackageReference "APIKit" */,
+				EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EF0C4B102346309F0045B5A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -650,6 +668,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF6D0289234DB6CD00632BA2 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF6D028A234DB6CD00632BA2 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF6D0289234DB6CD00632BA2 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+		EF6D028D234DB77100632BA2 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		EF6D028F234DB77100632BA2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EF6D0291234DB77100632BA2 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF0C4B072346309F0045B5A7 /* Project object */;
 }
