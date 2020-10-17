@@ -22,7 +22,6 @@
 		EF41AB0E23498EC500771A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0623498EC500771A01 /* AppDelegate.swift */; };
 		EF41AB0F23498EC500771A01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AB0723498EC500771A01 /* SceneDelegate.swift */; };
 		EF6D028B234DB6CD00632BA2 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028A234DB6CD00632BA2 /* APIKit */; };
-		EF6D028E234DB77100632BA2 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028D234DB77100632BA2 /* RxTest */; };
 		EF6D0290234DB77100632BA2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D028F234DB77100632BA2 /* RxSwift */; };
 		EF6D0292234DB77100632BA2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EF6D0291234DB77100632BA2 /* RxRelay */; };
 /* End PBXBuildFile section */
@@ -73,7 +72,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6D0290234DB77100632BA2 /* RxSwift in Frameworks */,
-				EF6D028E234DB77100632BA2 /* RxTest in Frameworks */,
 				EF6D0292234DB77100632BA2 /* RxRelay in Frameworks */,
 				EF6D028B234DB6CD00632BA2 /* APIKit in Frameworks */,
 			);
@@ -212,7 +210,6 @@
 			name = ToDoList;
 			packageProductDependencies = (
 				EF6D028A234DB6CD00632BA2 /* APIKit */,
-				EF6D028D234DB77100632BA2 /* RxTest */,
 				EF6D028F234DB77100632BA2 /* RxSwift */,
 				EF6D0291234DB77100632BA2 /* RxRelay */,
 			);
@@ -513,6 +510,7 @@
 				DEVELOPMENT_TEAM = CFBV6A4UV7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,6 +531,7 @@
 				DEVELOPMENT_TEAM = CFBV6A4UV7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -693,11 +692,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EF6D0289234DB6CD00632BA2 /* XCRemoteSwiftPackageReference "APIKit" */;
 			productName = APIKit;
-		};
-		EF6D028D234DB77100632BA2 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EF6D028C234DB77100632BA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
 		};
 		EF6D028F234DB77100632BA2 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;

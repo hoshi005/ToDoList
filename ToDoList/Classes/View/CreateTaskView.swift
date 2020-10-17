@@ -16,11 +16,11 @@ struct CreateTaskView: View {
         VStack {
             HStack {
                 // タスク名入力欄.
-                TextField("新しいタスクを入力してね", text: $viewModel.taskName) {
+                TextField("新しいタスクを入力してね", text: $viewModel.taskName, onCommit:  {
                     if !self.viewModel.taskName.isEmpty {
                         self.viewModel.createNewTask()
                     }
-                }
+                })
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .border(Color.gray, width: 2)
                 .modifier(ClearButton(taskName: $viewModel.taskName))
